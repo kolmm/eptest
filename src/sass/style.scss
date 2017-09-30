@@ -1,5 +1,7 @@
 @import "normalize.scss";
 @import "fonts.scss";
+@import "mixins.scss";
+@import "variables.scss";
 
 body {
   position: relative;
@@ -10,6 +12,30 @@ body {
 
 ul {
   margin: 0;
+}
+
+.h1 {
+  @include h1;
+}
+
+.h2 {
+  @include h2;
+}
+
+.h3 {
+  @include h3;
+}
+
+.h4 {
+  @include h4;
+}
+
+.h5 {
+  @include h4;
+}
+
+.h6 {
+  @include h4;
 }
 
 header {
@@ -28,6 +54,16 @@ header {
   border-right: 1px solid #dddddd;
 }
 
+.menu-close {
+  margin: auto;
+  margin-top: 30px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/close_15-14.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header-search {
   float: left;
 }
@@ -38,11 +74,29 @@ header {
   outline:none;
 }
 
+.search-ico {
+  float: left;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header-bag {
   float: right;
   height: 80px;
   width: 80px;
   border-left: 1px solid #dddddd;
+}
+
+.bag-ico {
+  margin: auto;
+  width: 27px;
+  height: 18px;
+  background-image: url(../img/bag.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main {
@@ -61,20 +115,55 @@ nav {
   border-right: 1px solid #dddddd;
 }
 
+.nav-items {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-items a {
+  text-decoration: none;
+}
+
+.nav-item {
+  margin-top: 15px;
+  margin-left: 33px;
+}
+
+.nav-item-ico {
+  float: left;
+  margin-right: 5px;
+}
+
 .outSearch {
   float: left;
   min-width: 639px;
+  height: 687px;
+  overflow-y: auto;
 }
 
-.outSearch-farm {
-
+.quantity-farm {
+  margin-left: 30px;
+  margin-bottom: 6px;
+  margin-top: 24px;
 }
 
 .outSearch-container {
-  margin: 2px auto 0;
   width: 580px;
   height: 63px;
+  margin-bottom: 2px;
+  margin-left: 30px;
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+.outSearch-img {
+  float: left;
+  height: 42px;
+  width: 42px;
+  margin: 11px 14px 10px 12px;
+}
+
+.name-container {
+  padding-top: 20px;
 }
 
 .farm-name,
@@ -84,4 +173,9 @@ nav {
 
 .quantity {
   float: right;
+  margin-right: 18px;
+}
+
+.outSearch-product {
+  margin-top: 48px;
 }

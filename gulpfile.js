@@ -56,7 +56,7 @@ gulp.task("images", function() {
 
 gulp.task("symbols", function() {
   return gulp.src("src/img/*.svg")
-    .pipe(svgmin())
+    // .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))
