@@ -1,0 +1,86 @@
+@import "normalize.scss";
+
+body {
+  position: relative;
+  left: 50%;
+  margin-left: -512px;
+  background-color: #fff;
+}
+
+ul {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  z-index: 5;
+  width: 1024px;
+  height: 80px;
+  background-color: #f0f1f2;
+  border: 1px solid #dddddd;
+}
+
+.menu {
+  float: left;
+  height: 80px;
+  width: 80px;
+  border-right: 1px solid #dddddd;
+}
+
+.header-search {
+  float: left;
+}
+
+.header-search input {
+  border: none;
+  background-color: transparent;
+  outline:none;
+}
+
+.header-bag {
+  float: right;
+  height: 80px;
+  width: 80px;
+  border-left: 1px solid #dddddd;
+}
+
+.main {
+  position: absolute;
+  top: 80px;
+  height: 687px;
+  width: 1024px;
+  background-color: #f0f1f2;
+  border: 1px solid #dddddd;
+}
+
+nav {
+  float: left;
+  min-width: 384px;
+  height: 687px;
+  border-right: 1px solid #dddddd;
+}
+
+.outSearch {
+  float: left;
+  min-width: 639px;
+}
+
+.outSearch-farm {
+
+}
+
+.outSearch-container {
+  margin: 2px auto 0;
+  width: 580px;
+  height: 63px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.farm-name,
+.farm-geo {
+  float: left;
+}
+
+.quantity {
+  float: right;
+}
