@@ -109,6 +109,21 @@ header {
   background-size: cover;
 }
 
+.bag-circle {
+  height: 19px;
+  width: 19px;
+  background-color: #5ac442;
+  border-radius: 50%;
+  position: relative;
+  bottom: 10px;
+  left: 17px;
+}
+
+.bag-circle span {
+  color: #fff;
+  margin-left: 7px;
+}
+
 .main {
   position: absolute;
   top: 80px;
@@ -116,6 +131,12 @@ header {
   width: 1024px;
   background-color: #f0f1f2;
   border: 1px solid #dddddd;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 nav {
@@ -150,6 +171,17 @@ nav {
   min-width: 639px;
   height: 687px;
   overflow-y: auto;
+}
+
+.outSearch::-webkit-scrollbar {
+  width: 5px;
+}
+
+.outSearch::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: #dddddd;
 }
 
 .quantity-farm {
