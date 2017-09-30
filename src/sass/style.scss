@@ -4,10 +4,7 @@
 @import "variables.scss";
 
 body {
-  position: relative;
-  left: 50%;
-  margin-left: -512px;
-  background-color: #fff;
+  overflow-x: hidden;
 }
 
 ul {
@@ -31,11 +28,17 @@ ul {
 }
 
 .h5 {
-  @include h4;
+  @include h5;
 }
 
 .h6 {
-  @include h4;
+  @include h6;
+}
+
+.wrap {
+  position: relative;
+  left: 50%;
+  margin-left: -512px;
 }
 
 header {
@@ -69,18 +72,24 @@ header {
 }
 
 .header-search input {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 780px;
   border: none;
   background-color: transparent;
   outline:none;
+  margin-left: 19px;
 }
 
 .search-ico {
   float: left;
   width: 18px;
   height: 18px;
+  margin-top: 30px;
   background-image: url(../img/search.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 28px;
 }
 
 .header-bag {
@@ -92,6 +101,7 @@ header {
 
 .bag-ico {
   margin: auto;
+  margin-top: 30px;
   width: 27px;
   height: 18px;
   background-image: url(../img/bag.svg);
@@ -112,6 +122,7 @@ nav {
   float: left;
   min-width: 384px;
   height: 687px;
+  overflow-y: auto;
   border-right: 1px solid #dddddd;
 }
 
@@ -147,10 +158,18 @@ nav {
   margin-top: 24px;
 }
 
-.outSearch-container {
+.outSearch-container-farm {
   width: 580px;
   height: 63px;
   margin-bottom: 2px;
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.outSearch-container-product {
+  width: 580px;
+  height: 74px;
+  margin-bottom: 3px;
   margin-left: 30px;
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -160,10 +179,18 @@ nav {
   height: 42px;
   width: 42px;
   margin: 11px 14px 10px 12px;
+  border-radius: 50%;
+}
+
+.product-img {
+  float: left;
+  height: 44px;
+  width: 62px;
+  margin: 15px 11px 15px 15px;
 }
 
 .name-container {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .farm-name,

@@ -33,3 +33,11 @@
   text-align: left;
   color: $textColor;
 }
+
+@mixin h6 {
+  font-family: "Gerbera";
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+  color: $textColor;
+}

@@ -411,10 +411,7 @@ template {
   src: url(../fonts/Gerbera.otf); }
 
 body {
-  position: relative;
-  left: 50%;
-  margin-left: -512px;
-  background-color: #fff; }
+  overflow-x: hidden; }
 
 ul {
   margin: 0; }
@@ -444,16 +441,23 @@ ul {
   color: #393939; }
 
 .h5 {
+  opacity: 0.7;
   font-family: "Gerbera";
-  font-size: 13px;
-  text-align: right;
+  font-size: 11px;
+  text-align: left;
   color: #393939; }
 
 .h6 {
   font-family: "Gerbera";
-  font-size: 13px;
-  text-align: right;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
   color: #393939; }
+
+.wrap {
+  position: relative;
+  left: 50%;
+  margin-left: -512px; }
 
 header {
   position: fixed;
@@ -482,17 +486,23 @@ header {
   float: left; }
 
 .header-search input {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 780px;
   border: none;
   background-color: transparent;
-  outline: none; }
+  outline: none;
+  margin-left: 19px; }
 
 .search-ico {
   float: left;
   width: 18px;
   height: 18px;
+  margin-top: 30px;
   background-image: url(../img/search.svg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-left: 28px; }
 
 .header-bag {
   float: right;
@@ -502,6 +512,7 @@ header {
 
 .bag-ico {
   margin: auto;
+  margin-top: 30px;
   width: 27px;
   height: 18px;
   background-image: url(../img/bag.svg);
@@ -520,6 +531,7 @@ nav {
   float: left;
   min-width: 384px;
   height: 687px;
+  overflow-y: auto;
   border-right: 1px solid #dddddd; }
 
 .nav-items {
@@ -548,10 +560,17 @@ nav {
   margin-bottom: 6px;
   margin-top: 24px; }
 
-.outSearch-container {
+.outSearch-container-farm {
   width: 580px;
   height: 63px;
   margin-bottom: 2px;
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.outSearch-container-product {
+  width: 580px;
+  height: 74px;
+  margin-bottom: 3px;
   margin-left: 30px;
   background-color: rgba(255, 255, 255, 0.6); }
 
@@ -559,10 +578,17 @@ nav {
   float: left;
   height: 42px;
   width: 42px;
-  margin: 11px 14px 10px 12px; }
+  margin: 11px 14px 10px 12px;
+  border-radius: 50%; }
+
+.product-img {
+  float: left;
+  height: 44px;
+  width: 62px;
+  margin: 15px 11px 15px 15px; }
 
 .name-container {
-  padding-top: 20px; }
+  padding-top: 25px; }
 
 .farm-name,
 .farm-geo {
