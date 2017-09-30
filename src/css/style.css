@@ -510,15 +510,81 @@ template {
 .h3-opacity {
   opacity: 0.8; }
 
+.quantity-farm-mobile {
+  margin-left: 20px;
+  margin-bottom: 6px;
+  margin-top: 24px; }
+
+.outSearch-farm-mobile {
+  width: 87.5%;
+  height: 75px;
+  background-color: #fff;
+  margin-left: 20px;
+  margin-bottom: 4px; }
+
+.outSearch-product-mobile {
+  width: 87.5%;
+  height: 92px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  margin-bottom: 4px; }
+
+.farm-name-mobile {
+  width: 64.3%; }
+
+.farm-geo-mobile {
+  width: 32.9%; }
+
+.outSearch-img-mobile {
+  float: right;
+  width: 46px;
+  height: 46px;
+  margin: 14px 14px 14px 0;
+  border-radius: 50%; }
+
+.product-border-mobile {
+  height: 56px;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.4); }
+
+.name-container-mobile {
+  padding-top: 9px;
+  padding-bottom: 10px;
+  margin-left: 4.3%; }
+
+.product-img-mobile {
+  float: right;
+  width: 76px;
+  height: 56px; }
+
+.quantity-mobile {
+  float: left;
+  margin-left: 4.3%;
+  padding-left: 7px;
+  margin-top: 8px; }
+
 body {
   overflow-x: hidden; }
 
 ul {
   margin: 0; }
 
+.h1-mobile {
+  font-family: "Gerbera";
+  font-size: 18px;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #393939; }
+
 .h1 {
   font-family: "Gerbera";
   font-size: 16px;
+  text-align: left;
+  color: #393939; }
+
+.h2-mobile {
+  font-family: "Gerbera";
+  font-size: 13px;
+  font-weight: bold;
   text-align: left;
   color: #393939; }
 

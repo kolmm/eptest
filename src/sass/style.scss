@@ -3,6 +3,7 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "mobilemenu.scss";
+@import "mobilesearch.scss";
 
 body {
   overflow-x: hidden;
@@ -12,8 +13,16 @@ ul {
   margin: 0;
 }
 
+.h1-mobile {
+  @include h1-mobile;
+}
+
 .h1 {
   @include h1;
+}
+
+.h2-mobile {
+  @include h2-mobile;
 }
 
 .h2 {
