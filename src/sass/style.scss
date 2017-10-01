@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+
+.active {
+  color: #42759a;
+}
+
 ul {
   margin: 0;
 }
@@ -64,15 +69,15 @@ header {
   z-index: 5;
   width: 1024px;
   height: 80px;
-  background-color: #f0f1f2;
-  border: 1px solid #dddddd;
+  background-color: $mainBgc;
+  border: 1px solid $border;
 }
 
 .menu {
   float: left;
   height: 80px;
   width: 80px;
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid $border;
 }
 
 .menu-close {
@@ -114,7 +119,7 @@ header {
   float: right;
   height: 80px;
   width: 80px;
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid $border;
 }
 
 .bag-ico {
@@ -149,15 +154,9 @@ header {
   top: 80px;
   height: 100vh;
   width: 1024px;
-  background-color: #f0f1f2;
-  border: 1px solid #dddddd;
+  background-color: $mainBgc;
+  border: 1px solid $border;
   overflow: hidden;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 nav {
@@ -165,7 +164,7 @@ nav {
   min-width: 384px;
   height: 687px;
   overflow-y: auto;
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid $border;
 }
 
 nav::-webkit-scrollbar {
@@ -209,7 +208,7 @@ nav::-webkit-scrollbar-thumb {
 .outSearch {
   float: left;
   min-width: 639px;
-  height: 687px;
+  height: 100vh;
   overflow-y: auto;
 }
 

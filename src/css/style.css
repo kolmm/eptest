@@ -481,8 +481,26 @@ template {
   line-height: 2;
   text-align: left; }
 
-.active {
+.h2-active {
+  font-family: "Gerbera";
+  font-size: 15px;
+  text-align: left;
   color: #42759a; }
+
+.h3-active {
+  font-family: "Gerbera";
+  font-size: 14px;
+  text-align: left;
+  color: #42759a; }
+
+.h3-active::before {
+  position: relative;
+  display: inline-block;
+  left: -7px;
+  content: '';
+  height: 4px;
+  width: 4px;
+  background-color: #46789c; }
 
 .footer {
   position: fixed;
@@ -562,6 +580,9 @@ template {
 
 body {
   overflow-x: hidden; }
+
+.active {
+  color: #42759a; }
 
 ul {
   margin: 0; }
@@ -723,11 +744,6 @@ header {
   border: 1px solid #dddddd;
   overflow: hidden; }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both; }
-
 nav {
   float: left;
   min-width: 384px;
@@ -769,7 +785,7 @@ nav::-webkit-scrollbar-thumb {
 .outSearch {
   float: left;
   min-width: 639px;
-  height: 687px;
+  height: 100vh;
   overflow-y: auto; }
 
 .outSearch::-webkit-scrollbar {
