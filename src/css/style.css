@@ -437,6 +437,7 @@ template {
   margin-left: 4.7%; }
 
 .header-bag-mobile {
+  position: relative;
   float: right;
   height: 62px;
   width: 62px;
@@ -450,6 +451,12 @@ template {
   background-image: url(../img/bag.svg);
   background-repeat: no-repeat;
   background-size: cover; }
+
+.bag-price {
+  position: absolute;
+  left: 10px;
+  width: 42px;
+  height: 16.2px; }
 
 .main-mobile {
   position: absolute;
@@ -514,10 +521,17 @@ template {
   margin-bottom: 4px; }
 
 .farm-name-mobile {
-  width: 64.3%; }
+  width: 72%;
+  font-weight: 500;
+  line-height: 1.13;
+  letter-spacing: -0.3px; }
+
+.product-name-mobile {
+  width: 67.9%; }
 
 .farm-geo-mobile {
-  width: 32.9%; }
+  width: 32.9%;
+  margin-top: 10px; }
 
 .outSearch-img-mobile {
   float: right;
@@ -578,6 +592,14 @@ ul {
   text-align: left;
   color: #393939; }
 
+.h3-mobile {
+  font-family: "Gerbera";
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.14;
+  letter-spacing: -0.3px;
+  color: #393939; }
+
 .h3 {
   font-family: "Gerbera";
   font-size: 14px;
@@ -588,6 +610,14 @@ ul {
   font-family: "Gerbera";
   font-size: 13px;
   text-align: right;
+  color: #393939; }
+
+.h5-mobile {
+  font-family: "Gerbera";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.47;
+  text-align: center;
   color: #393939; }
 
 .h5 {
@@ -670,25 +700,28 @@ header {
   background-size: cover; }
 
 .bag-circle {
+  position: relative;
+  bottom: 10px;
+  left: 17px;
   height: 19px;
   width: 19px;
   background-color: #5ac442;
-  border-radius: 50%;
-  position: relative;
-  bottom: 10px;
-  left: 17px; }
+  border-radius: 50%; }
 
 .bag-circle span {
-  color: #fff;
-  margin-left: 7px; }
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  color: #fff; }
 
 .main {
   position: absolute;
   top: 80px;
-  height: 687px;
+  height: 100vh;
   width: 1024px;
   background-color: #f0f1f2;
-  border: 1px solid #dddddd; }
+  border: 1px solid #dddddd;
+  overflow: hidden; }
 
 .clearfix::after {
   content: "";
@@ -701,6 +734,15 @@ nav {
   height: 687px;
   overflow-y: auto;
   border-right: 1px solid #dddddd; }
+
+nav::-webkit-scrollbar {
+  width: 5px; }
+
+nav::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: #dddddd; }
 
 .nav-items {
   list-style: none;
@@ -716,6 +758,13 @@ nav {
 .nav-item-ico {
   float: left;
   margin-right: 5px; }
+
+.nav-item-ico--rotate {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg); }
+
+.nav-item-ico--margin {
+  margin-top: 4px; }
 
 .outSearch {
   float: left;

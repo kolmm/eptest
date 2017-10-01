@@ -29,12 +29,20 @@ ul {
   @include h2;
 }
 
+.h3-mobile {
+  @include h3-mobile;
+}
+
 .h3 {
   @include h3;
 }
 
 .h4 {
   @include h4;
+}
+
+.h5-mobile {
+  @include h5-mobile;
 }
 
 .h5 {
@@ -120,27 +128,30 @@ header {
 }
 
 .bag-circle {
+  position: relative;
+  bottom: 10px;
+  left: 17px;
   height: 19px;
   width: 19px;
   background-color: #5ac442;
   border-radius: 50%;
-  position: relative;
-  bottom: 10px;
-  left: 17px;
 }
 
 .bag-circle span {
+  position: absolute;
+  top: 4px;
+  left: 7px;
   color: #fff;
-  margin-left: 7px;
 }
 
 .main {
   position: absolute;
   top: 80px;
-  height: 687px;
+  height: 100vh;
   width: 1024px;
   background-color: #f0f1f2;
   border: 1px solid #dddddd;
+  overflow: hidden;
 }
 
 .clearfix::after {
@@ -155,6 +166,17 @@ nav {
   height: 687px;
   overflow-y: auto;
   border-right: 1px solid #dddddd;
+}
+
+nav::-webkit-scrollbar {
+  width: 5px;
+}
+
+nav::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: #dddddd;
 }
 
 .nav-items {
@@ -174,6 +196,14 @@ nav {
 .nav-item-ico {
   float: left;
   margin-right: 5px;
+}
+
+.nav-item-ico--rotate {
+  transform: rotate(15deg);
+}
+
+.nav-item-ico--margin {
+  margin-top: 4px;
 }
 
 .outSearch {
