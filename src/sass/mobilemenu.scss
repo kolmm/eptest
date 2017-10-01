@@ -114,10 +114,10 @@
 }
 
 .h3-active::before {
-  position: relative;
-  display: inline-block;
-  left: -7px;
   content: '';
+  position: relative;
+  left: -7px;
+  display: inline-block;
   height: 4px;
   width: 4px;
   background-color: #46789c;
