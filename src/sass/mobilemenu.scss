@@ -117,10 +117,12 @@
   content: '';
   position: relative;
   left: -7px;
+  bottom: 3px;
   display: inline-block;
   height: 4px;
   width: 4px;
   background-color: #46789c;
+  border-radius: 50%;
 }
 
 .footer {
