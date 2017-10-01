@@ -477,6 +477,9 @@ template {
   list-style: none;
   margin-top: 5px; }
 
+.nav-item-mobile ul li {
+  position: relative; }
+
 .h3-height {
   line-height: 2;
   text-align: left; }
@@ -495,12 +498,14 @@ template {
 
 .h3-active::before {
   content: '';
-  position: relative;
-  left: -7px;
+  position: absolute;
+  left: -10px;
+  bottom: 11px;
   display: inline-block;
   height: 4px;
   width: 4px;
-  background-color: #46789c; }
+  background-color: #46789c;
+  border-radius: 50%; }
 
 .footer {
   position: fixed;

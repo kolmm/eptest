@@ -94,6 +94,10 @@
   margin-top: 5px;
 }
 
+.nav-item-mobile ul li {
+  position: relative;
+}
+
 .h3-height {
   line-height: 2;
   text-align: left;
@@ -115,9 +119,9 @@
 
 .h3-active::before {
   content: '';
-  position: relative;
-  left: -7px;
-  bottom: 3px;
+  position: absolute;
+  left: -10px;
+  bottom: 11px;
   display: inline-block;
   height: 4px;
   width: 4px;
